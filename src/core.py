@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 
 import ast
-import src.transforms as transforms
+import simple_transforms as transforms
 
 from pathlib import Path
+
 
 class Bettifier:
 
@@ -62,7 +63,6 @@ class Bettifier:
             setattr(cls, method_name, staticmethod(x))
 
         del transforms.methods
-
 
 if (__name__ == "__main__"):
     """FOR USE IN INTERATIVE MODE"""

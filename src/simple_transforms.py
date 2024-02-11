@@ -85,10 +85,3 @@ def fix_function_headers(lines: str) -> str:
 
     return (lines)
 
-
-methods = tuple(
-    x for x in globals().values() if (
-        "function" in str(x.__class__)
-    )
-)
-
